@@ -1,0 +1,27 @@
+.not_found {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.button {
+    width: 248px;
+    height: 48px;
+    border: 0.3px solid #808080;
+    border-radius: 32px;
+    cursor: pointer; 
+    transition: all 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 24px 32px 72px #808080;
+}
