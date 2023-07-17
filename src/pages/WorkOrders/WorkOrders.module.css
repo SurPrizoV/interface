@@ -1,0 +1,52 @@
+.work_order {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.header_items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.options {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.hover {
+    transition: all 0.1s;
+}
+
+.hover:hover {
+    transform: scale(1.01);
+    color: #0d6efd;
+    font-size: 26px;
+}
+
+.icon_big {
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.icon_big:hover {
+    transform: scale(1.01);
+    font-size: 42px;
+}

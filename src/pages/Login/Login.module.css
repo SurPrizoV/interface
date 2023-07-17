@@ -1,0 +1,13 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 16px;
+    padding: 16px 8px;
+}
+
+.options {
+    padding: 12px;
+}

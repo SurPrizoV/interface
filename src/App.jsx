@@ -1,15 +1,18 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { AppRoutes } from './services/Routes/Routes';
 import { useState } from 'react';
+import { UserContext } from "./services/Context/UserContext";
 
 function App() {
-  const user = localStorage.getItem("token");
-  const [login, setLogin] = useState("");
-  const [password, setPassword] = useState("");
+  const token = localStorage.getItem("token");
+  const [user, setUser] = useState("");
 
   return (
     <div className="App">
-      <AppRoutes user={user} login={login} setLogin={setLogin} password={password} setPassword={setPassword}/>
+      <UserContext.Provider value={{ user: user, setUser: setUser }}>
+        <AppRoutes user={user ? user : token}/>
+      </UserContext.Provider>
     </div>
   );
 }

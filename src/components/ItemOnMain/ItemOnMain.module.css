@@ -1,0 +1,18 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.info:hover {
+    transform: scale(1.01);
+    font-weight: 600;
+}

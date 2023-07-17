@@ -1,0 +1,33 @@
+.title {
+    font-weight: 800;
+    font-size: 48px; 
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.icon_big {
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.icon_big:hover {
+    transform: scale(1.01);
+    font-size: 42px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
